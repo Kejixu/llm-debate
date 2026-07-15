@@ -1,0 +1,18 @@
+# python / uv
+.venv/
+__pycache__/
+*.pyc
+dist/
+
+# probe scratch (empty cwd sandboxes for CLI calls) — fixtures/ IS committed
+probes/scratch/
+
+# debate run data
+runs/
+.gstack/
+.superpowers/
+.gstack-design-shots/
+
+# local-only agent configs
+CLAUDE.md
+AGENTS.md

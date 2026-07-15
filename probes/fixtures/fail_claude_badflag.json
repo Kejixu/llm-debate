@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "claude",
+    "-p",
+    "hi",
+    "--no-such-flag"
+  ],
+  "exit_code": 1,
+  "duration_s": 0.18,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "error: unknown option '--no-such-flag'\n"
+}
