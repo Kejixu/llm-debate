@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "codex",
+    "exec",
+    "--json",
+    "-s",
+    "read-only",
+    "Reply with exactly the text PROBE_OK and nothing else."
+  ],
+  "exit_code": 0,
+  "duration_s": 5.77,
+  "timed_out": false,
+  "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"019f3b37-309c-7f30-9b6b-bfae8a26d027\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"agent_message\",\"text\":\"PROBE_OK\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":12695,\"cached_input_tokens\":9600,\"output_tokens\":67,\"reasoning_output_tokens\":58}}\n",
+  "stderr": "Reading additional input from stdin...\n"
+}

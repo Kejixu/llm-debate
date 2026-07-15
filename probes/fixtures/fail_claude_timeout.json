@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "claude",
+    "-p",
+    "Write a detailed 2000-word essay about the history of state machines.",
+    "--output-format",
+    "json"
+  ],
+  "exit_code": null,
+  "duration_s": 5.03,
+  "timed_out": true,
+  "stdout": "",
+  "stderr": ""
+}

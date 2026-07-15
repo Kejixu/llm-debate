@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "codex",
+    "exec",
+    "-s",
+    "read-only",
+    "--output-last-message",
+    "<repo>/probes/scratch/codex_participant_last/last_message.txt",
+    "Reply with exactly the text PROBE_OK and nothing else."
+  ],
+  "exit_code": 0,
+  "duration_s": 4.08,
+  "timed_out": false,
+  "stdout": "PROBE_OK\n",
+  "stderr": "Reading additional input from stdin...\nOpenAI Codex v0.142.4\n--------\nworkdir: <repo>/probes/scratch/codex_participant_last\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: medium\nreasoning summaries: none\nsession id: <session-id>\n--------\nuser\nReply with exactly the text PROBE_OK and nothing else.\ncodex\nPROBE_OK\ntokens used\n3,171\n"
+}

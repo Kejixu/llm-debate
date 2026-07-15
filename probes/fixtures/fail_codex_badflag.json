@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "codex",
+    "exec",
+    "--no-such-flag",
+    "hi"
+  ],
+  "exit_code": 2,
+  "duration_s": 0.17,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "error: unexpected argument '--no-such-flag' found\n\n  tip: to pass '--no-such-flag' as a value, use '-- --no-such-flag'\n\nUsage: codex exec [OPTIONS] [PROMPT]\n       codex exec [OPTIONS] <COMMAND> [ARGS]\n\nFor more information, try '--help'.\n"
+}

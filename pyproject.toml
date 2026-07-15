@@ -1,0 +1,53 @@
+[project]
+name = "llm-debate"
+version = "0.1.0"
+description = "Blind multi-agent debate-to-consensus orchestrator over LLM CLIs, with an invisible judge"
+readme = "README.md"
+authors = [
+    { name = "Keji" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.139.0",
+    "langfuse>=4.14.0",
+    "python-statemachine>=3.2.0",
+    "uvicorn[standard]>=0.51.0",
+]
+
+[project.scripts]
+llm-debate = "llm_debate.cli:main"
+llm-debate-export = "llm_debate.export_langfuse:main"
+llm-debate-ui = "llm_debate.ui.server:main"
+
+[build-system]
+requires = ["uv_build>=0.9.17,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.15.20",
+    "ty>=0.0.56",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["llm_debate"]
+
+[tool.ty.environment]
+python-version = "3.12"
+
+[tool.ty.src]
+include = ["src/**/*.py", "tests/**/*.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
