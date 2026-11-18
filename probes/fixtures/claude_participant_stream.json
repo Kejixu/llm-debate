@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "claude",
+    "-p",
+    "Reply with exactly the text PROBE_OK and nothing else.",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "exit_code": 0,
+  "duration_s": 6.6,
+  "timed_out": false,
+  "note": "captured 2026-07-16; host SessionStart-hook events and the thinking-block signature line trimmed for size",
+  "stdout": "{\"type\": \"system\", \"subtype\": \"init\", \"cwd\": \"/probe/scratch\", \"session_id\": \"a7dee742-3fb6-47df-830d-3af874fb03f6\", \"model\": \"claude-fable-5\", \"permissionMode\": \"auto\", \"output_style\": \"default\", \"claude_code_version\": \"2.1.211\", \"apiKeySource\": \"none\"}\n{\"type\": \"system\", \"subtype\": \"thinking_tokens\", \"estimated_tokens\": 50, \"estimated_tokens_delta\": 50, \"uuid\": \"2b10f482-b65b-4325-bb24-7155f1d3d942\", \"session_id\": \"a7dee742-3fb6-47df-830d-3af874fb03f6\"}\n{\"type\": \"system\", \"subtype\": \"thinking_tokens\", \"estimated_tokens\": 115, \"estimated_tokens_delta\": 65, \"uuid\": \"c439c89e-2f1b-459a-9898-d2cf17da7b15\", \"session_id\": \"a7dee742-3fb6-47df-830d-3af874fb03f6\"}\n{\"type\": \"assistant\", \"message\": {\"model\": \"claude-fable-5\", \"id\": \"msg_011Cd69VcysMwDHsqVnDZmr7\", \"type\": \"message\", \"role\": \"assistant\", \"content\": [{\"type\": \"text\", \"text\": \"PROBE_OK\"}], \"stop_reason\": null, \"usage\": {\"input_tokens\": 2, \"cache_read_input_tokens\": 15042, \"output_tokens\": 3}}, \"session_id\": \"a7dee742-3fb6-47df-830d-3af874fb03f6\", \"uuid\": \"5493ddd7-ec3a-45a7-a553-7402cd22ffef\"}\n{\"type\": \"rate_limit_event\", \"rate_limit_info\": {\"status\": \"allowed\", \"rateLimitType\": \"five_hour\"}, \"uuid\": \"bd23905c-9826-4016-b4df-48e47d6b4adb\", \"session_id\": \"a7dee742-3fb6-47df-830d-3af874fb03f6\"}\n{\"type\": \"result\", \"subtype\": \"success\", \"is_error\": false, \"duration_ms\": 6645, \"duration_api_ms\": 6611, \"num_turns\": 1, \"result\": \"PROBE_OK\", \"stop_reason\": \"end_turn\", \"session_id\": \"a7dee742-3fb6-47df-830d-3af874fb03f6\", \"total_cost_usd\": 0.31365200000000004, \"usage\": {\"input_tokens\": 2, \"cache_creation_input_tokens\": 14722, \"cache_read_input_tokens\": 15042, \"output_tokens\": 83}}\n"
+}
